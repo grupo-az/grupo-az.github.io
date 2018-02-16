@@ -7,53 +7,79 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <title>GRUPO AZ | Soluciones de estudio para tus niños</title>
+
+    <!-- Cargando fuentes -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- Cargando iconos -->
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+
+    <!-- Carga de Galería de imagenes -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+
+    <!-- Carga de archivos css -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
     <section class="bienvenidos">
-        <header class="encabezado" role="banner">
-            <a href="index.html">
-                <img src="images/logo.svg" alt="Logo del sitio">
-            </a>
-            <button type="button" class="boton-buscar">Boton buscar</button>
-            <button type="button" class="boton-menu">Boton menu</button>
+        <header class="encabezado navbar-fixed-top" role="banner" id="encabezado">
+            <div class="container">
 
-            <form action="#" id="bloque-buscar">
-                <div class="contenedor-bloque-buscar">
-                    <input type="text" placeholder="Buscar...">
-                    <input type="submit" value="Buscar">
-                </div>
-            </form>
+                <a href="index.html" class="logo">
+                    <img src="images/logo-white.svg" alt="Logo del sitio" width="35px">
+                    <span>Grupo</span>
+                </a>
+                <button type="button" class="boton-buscar" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="boton-menu hidden-md-up" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
+                    <i class="fa fa-reorder" aria-hidden="true"></i>
+                </button>
 
-            <nav id="menu-principal">
-                <ul>
-                    <li class="active">
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="servicios.html">Servicios</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
+                <form action="#" id="bloque-buscar" class="collapse">
+                    <div class="contenedor-bloque-buscar">
+                        <input type="text" placeholder="Buscar...">
+                        <input type="submit" value="Buscar">
+                    </div>
+                </form>
 
+                <nav id="menu-principal" class="collapse">
+                    <ul>
+                        <li class="active">
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="servicios.html">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
         </header>
 
-        <div class="texto-encabezado">
-            <h1>Diseño de APPS para empresas</h1>
-            <p>
-                Creamos aplicaciones según las necesidades y requerimientos de nuestros clientes.
-            </p>
-            <a href="contacto.html">Ponte en contacto</a>
+        <div class="texto-encabezado text-xs-center">
+            <div class="container">
+                <h1 class="display-4 wow bounceIn">Diseño de APPS para empresas</h1>
+                <p class="wow bounceIn" data-wow-delay=".3s">
+                    Creamos aplicaciones según las necesidades y requerimientos de nuestros clientes.
+                </p>
+                <a href="contacto.html" class="btn btn-primary btn-lg">Ponte en contacto</a>
+            </div>
         </div>
 
-        <div class="flecha-bajar">
-            <a href="#agencia">Boton bajar</a>
+        <div class="flecha-bajar text-xs-center">
+            <a data-scroll href="#agencia">
+                <li class="fa fa-angle-down" aria-hidden="true"></li>
+            </a>
         </div>
 
     </section>
@@ -133,9 +159,11 @@
         </a>
     </section>
 
-    <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.356195173227!2d-76.88347018453653!3d-12.01898104465825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c3c8bf217b75%3A0x250892ead81343c1!2sArteco+-+Condominio+Paseo+Santa+Clara!5e0!3m2!1ses-419!2spe!4v1518734860480"
-            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <section class="mapa">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3902.916646742296!2d-76.82197584022573!3d-11.980269360546497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d-11.9786767!2d-76.82062069999999!5e0!3m2!1ses-419!2spe!4v1518736857243"
+            width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+
     </section>
 
     <footer class="piedepagina" role="contentinfo">
@@ -155,7 +183,10 @@
 
     <a href="#" class="ir-arriba">Ir arriba</a>
 
-
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/tether.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/sitio.js"></script>
 </body>
 
 </html>
