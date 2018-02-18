@@ -385,12 +385,12 @@ body {
   color: #fff; }
 
 .paginas-internas .lista-servicios {
-  background: #009500; }
+  background: #fff; }
 
 .paginas-internas .lista-servicios .item-servicios {
   background: #fff;
   text-align: center;
-  border: 5px solid #057705;
+  border: 5px solid #111111;
   border-radius: 5px;
   margin-bottom: 1rem;
   padding: 1rem; }

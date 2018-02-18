@@ -422,13 +422,13 @@ body {
 // ESTILOS PÁGINA SERVICIOS
 //--------------------------------
 .paginas-internas .lista-servicios {
-    background: $secundario;
+    background: #fff;
 }
 
 .paginas-internas .lista-servicios .item-servicios {
     background: #fff;
     text-align: center;
-    border: 5px solid #057705;
+    border: 5px solid $texto;
     border-radius: 5px;
     margin-bottom: 1rem;
     padding: 1rem;
