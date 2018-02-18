@@ -42,3 +42,12 @@ $(window).scroll(function () {
     }
 });
 
+$('.boton-menu').click(function () {
+    hasTrue = $('.encabezado').hasClass('open-menu');
+    if (!hasTrue) {
+        $('.encabezado').addClass("open-menu")
+    } else {
+        $('.encabezado').removeClass("open-menu")
+    }
+    // alert(hasTrue);
+})

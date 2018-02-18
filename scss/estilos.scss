@@ -31,7 +31,8 @@ body {
     transition: all .3s ease;
 }
 
-.encabezado.fondo-menu {
+.encabezado.fondo-menu,
+.encabezado.open-menu {
     background: #064e4e; // background: #fff;
     padding: 1rem 0;
 }

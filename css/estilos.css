@@ -26,7 +26,8 @@ body {
   -webkit-transition: all .3s ease;
   transition: all .3s ease; }
 
-.encabezado.fondo-menu {
+.encabezado.fondo-menu,
+.encabezado.open-menu {
   background: #064e4e;
   padding: 1rem 0; }
 
