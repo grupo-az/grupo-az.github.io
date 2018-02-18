@@ -353,6 +353,61 @@ body {
   text-decoration: none;
   color: #fff; }
 
+.paginas-internas .bienvenidos {
+  height: 50vh; }
+
+.paginas-internas .ruta {
+  background: #12AFAF;
+  color: #fff; }
+
+.paginas-internas .ruta a {
+  color: #fff;
+  text-decoration: underline; }
+
+.paginas-internas .ruta a:hover {
+  text-decoration: none; }
+
+.paginas-internas .panel .panel-heading {
+  font-size: 1.2rem; }
+
+.paginas-internas .panel .panel-heading a {
+  background: #12AFAF;
+  color: #fff;
+  display: block;
+  padding: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.paginas-internas .panel .panel-heading a:hover {
+  background: #009500;
+  color: #fff; }
+
+.paginas-internas .lista-servicios {
+  background: #009500; }
+
+.paginas-internas .lista-servicios .item-servicios {
+  background: #fff;
+  text-align: center;
+  border: 5px solid #057705;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 1rem; }
+
+.paginas-internas .lista-servicios .item-servicios .fa {
+  font-size: 6rem;
+  color: #12AFAF;
+  margin-bottom: 1rem;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.paginas-internas .lista-servicios .item-servicios:hover .fa {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d; }
+
 @media (min-width: 768px) {
   #menu-principal {
     height: auto !important;
@@ -443,6 +498,23 @@ body {
     width: 100%; }
 
   .servicios .btn-secondary {
+    margin-top: auto; }
+
+  .paginas-internas .lista-servicios .col-md-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+  .paginas-internas .lista-servicios .item-servicios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+  .paginas-internas .lista-servicios .item-servicios .btn-primary {
     margin-top: auto; } }
 @media (min-width: 992px) {
   html {

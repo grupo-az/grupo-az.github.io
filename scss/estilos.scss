@@ -162,7 +162,6 @@ body {
 .btn-primary:focus {
     background-color: $secundario;
     border-color: transparent;
-    
 }
 
 .flecha-bajar a {
@@ -380,6 +379,74 @@ body {
 }
 
 //--------------------------------
+// ESTILOS PÁGINA NOSOTROS
+//--------------------------------
+.paginas-internas .bienvenidos {
+    height: 50vh;
+}
+
+.paginas-internas .ruta {
+    background: $principal;
+    color: #fff;
+}
+
+.paginas-internas .ruta a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.paginas-internas .ruta a:hover {
+    text-decoration: none
+}
+
+.paginas-internas .panel .panel-heading {
+    font-size: 1.2rem;
+}
+
+.paginas-internas .panel .panel-heading a {
+    background: $principal;
+    color: #fff;
+    display: block;
+    padding: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.paginas-internas .panel .panel-heading a:hover {
+    background: $secundario;
+    color: #fff;
+}
+
+//--------------------------------
+// ESTILOS PÁGINA SERVICIOS
+//--------------------------------
+.paginas-internas .lista-servicios {
+    background: $secundario;
+}
+
+.paginas-internas .lista-servicios .item-servicios {
+    background: #fff;
+    text-align: center;
+    border: 5px solid #057705;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.paginas-internas .lista-servicios .item-servicios .fa {
+    font-size: 6rem;
+    color: $principal;
+    margin-bottom: 1rem;
+    transition: all 1s ease;
+}
+
+.paginas-internas .lista-servicios .item-servicios:hover .fa {
+    transform: rotateY(360deg);
+    transform-style: preserve-3d;
+}
+
+//--------------------------------
 // COMIENZAN LAS MEDIAS QUERIES
 //--------------------------------
 //--------------------------------
@@ -459,6 +526,18 @@ body {
     // Begin: Para problemas con IE cuando cambiamos flex-direction a column
     // ---------------------------------
     .servicios .btn-secondary {
+        margin-top: auto;
+    } // ---------------------------------
+    // PAGINA SERVICIOS
+    // ---------------------------------
+    .paginas-internas .lista-servicios .col-md-4 {
+        display: flex;
+    }
+    .paginas-internas .lista-servicios .item-servicios {
+        display: flex;
+        flex-direction: column;
+    }
+    .paginas-internas .lista-servicios .item-servicios .btn-primary {
         margin-top: auto;
     }
 }
